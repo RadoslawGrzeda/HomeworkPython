@@ -64,6 +64,8 @@ con=True;
 # x=x[::-1]
 # print(x)
 #2
-x=range(1,15,1)
-for i in range(len(x)):
-    print(i)
+l=[]
+for i in range(1,16):
+    l.append(i*3);
+print(l)
+#3
