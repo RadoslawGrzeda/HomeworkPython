@@ -17,7 +17,7 @@ witych.
 4. Napisz program rysujący prostokąt z gwiazdek o wymiarach n × m.
 '''
 
-#[LAB 1-CZESC]
+#[LAB 1-CZESC]--------------------------------------------
 
 #1
 l=[4, 4, 4, 2, 2, 3, 5, 6, 7, 8, 7, 5, 4, 3, 2, 4];
@@ -43,29 +43,37 @@ x=1_120_231
 y=6_512
 print(x-y)
 print(x+y)
-##
-con=True;
-# while con:
-#
-#     x = input('Osoba1: ')
-#     y = input('Osoba2: ')
-#     if x=='STOP' or y=='STOP':
-#         con=False
-    # print(y)
-'''
-1. Napisz program drukujący podaną liczbę x (np. ośmiocyfrową) w odwrotnej kolejności.
-2. Napisz program, który wypisze piętnaście pierwszych wielokrotności liczby 3.
-3. Napisz program, który wpisze wszystkie dzielniki naturalne podanej wcześniej liczby n.
-4. Napisz program rysujący prostokąt z gwiazdek o wymiarach n × m.
-'''
-#[LAB 2-CZESC]
+#7
+con=True
+
+while con:
+    x = input('Osoba1: ')
+    y = input('Osoba2: ')
+    if x=='STOP' or y=='STOP':
+        con=False
+    print(y)
+
+#[LAB 2-CZESC]----------------------------
 #1
-# x=input('Podaj cyfre')
-# x=x[::-1]
-# print(x)
+x=input('Podaj cyfre')
+x=x[::-1]
+print(x)
 #2
 l=[]
 for i in range(1,16):
     l.append(i*3);
 print(l)
 #3
+l=[]
+x=int(input('PodajCyfre: '))
+for i in range(1,x+1):
+    if(x%i==0):
+        l.append(i)
+print(l)
+#4
+x=int(input('Podaj wartosc n: '))
+y=int(input('Podaj wartosc m: '))
+for i in range(y):
+    for j in range(x):
+        print('*',end=' ')
+    print()
